@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+    <title>
+        Pagina de Prueba2
+    </title>
+        <meta charset="UTF-8">
+        <meta name="title" content="Pagina de Prueba2">
+        <style>
+            #body{
+              background-color:cornflowerblue;
+            }
+            #title{
+            color:floralwhite;
+            text-shadow: 3px 3px 2px #696;  
+            text-shadow: black 0.1em 0.1em 0.2em;       
+            font-family:monospace;
+            font-size: 30px;
+            text-align: center;
+            }
+            #description{
+             text-shadow: 3px 3px 2px #696; 
+             text-shadow: black 0.1em 0.1em 0.2em; 
+             color:floralwhite;
+             font-size: 20px;
+             text-align: center;
+            }
+
+            #survey-form{
+               margin: auto;
+               background-color:blue;
+               width: 720px;
+               height: 1000px;
+               border-radius: 4px;
+            }
+            #name{
+              width: 600px;
+              height: 35px;
+              border-radius: 4px;
+              display: flex;  
+              margin: 0 auto;
+               }
+            #email{
+              width: 600px;
+              height: 35px;
+              border-radius: 4px;
+              display: flex;  
+              margin: 0 auto;
+            }
+            #number{
+              width: 600px;
+              height: 35px;
+              border-radius: 4px;
+              display: flex;  
+              margin: 0 auto;
+            }
+            #name-label{ 
+              color:cornsilk;
+              font-size: 20px;
+              text-align: center;
+              margin-left: 59px;     
+              text-shadow: 3px 3px 2px #696;  
+              text-shadow: black 0.1em 0.1em 0.2em;          
+            }
+
+            #email-label{
+              color:cornsilk;
+              font-size: 20px;
+             margin-left: 59px;
+             text-shadow: 3px 3px 2px #696;  
+             text-shadow: black 0.1em 0.1em 0.2em; 
+            }
+
+            #number-label{
+              color:cornsilk;
+              font-size: 20px;
+              margin-left: 59px;
+              text-shadow: 3px 3px 2px #696;  
+              text-shadow: black 0.1em 0.1em 0.2em; 
+            }
+            #submit{
+              background-color:darkgreen;  
+              color: white;
+              width: 600px;
+              height: 35px;
+              display: flex;  
+              margin: 0 auto;
+              padding-top: 7px;
+              border-radius: 5px;
+            }
+            
+            #submitbuton{
+              margin-left: 345px;
+              padding-top: 20px;
+              color:cornsilk;
+              text-shadow: 3px 3px 2px #696;  
+              text-shadow: black 0.1em 0.1em 0.2em;
+              display: inline;
+              }
+            #selecciona{
+              color:cornsilk;
+              font-size: 20px;
+              margin-left: 59px;
+              text-shadow: 3px 3px 2px #696;  
+              text-shadow: black 0.1em 0.1em 0.2em; 
+              }
+
+              #sexoma{
+              color:cornsilk;
+              font-size: 20px;
+              margin-left: 59px;              
+              } 
+
+              #sexofe{
+              color:cornsilk;
+              font-size: 20px;
+              margin-left: 59px;
+              }
+
+              #lenguaje{
+              color:cornsilk;
+              font-size: 20px;
+              margin-left: 59px;
+              text-shadow: 3px 3px 2px #696;  
+              text-shadow: black 0.1em 0.1em 0.2em; 
+              }
+
+              #comenta{
+              color:cornsilk;
+              font-size: 20px;
+              margin-left: 59px;
+              text-shadow: 3px 3px 2px #696;  
+              text-shadow: black 0.1em 0.1em 0.2em; 
+               }
+
+              #comentarios{
+              width: 600px;
+              height: 90px;
+              border-radius: 4px;
+              margin-left: 59px;
+              }
+
+            #dropdown{
+              width: 600px;
+              height: 35px;
+              border-radius: 4px;
+              display: flex;  
+              margin: 0 auto;
+            }
+            #radio{
+              color:cornsilk;
+              font-size: 20px;
+              margin-left: 59px;
+              text-shadow: 3px 3px 2px #696;  
+              text-shadow: black 0.1em 0.1em 0.2em; 
+            }
+            #div{
+              color:cornsilk;
+              font-size: 20px;
+              margin-left: 59px;
+            }
+           
+        </style>
+        <body id="body">
+            <h1 id="title">NUESTRO PRIMER FORMULARIO</h1>
+            <p id="description">Gracias por tomarte el tiempo de entrar a nuestra plataforma</p>
+            <form id="survey-form"><br>
+                 <label id="name-label">Nombre:</label><br><br>
+                  <input type="text" id="name"  placeholder="introduzca el nombre" required>
+                <br><br>
+                
+               <label id="email-label">Email:</label><br><br>
+                 <input type="email"  id="email" placeholder="introduzca email" required>
+               <br><br>
+                
+                 <label id="number-label">Edad</label><br><br>
+                 <input type="number"  id="number" placeholder="introduzca su edad" min="1" max="80" >
+               <br><br>
+
+                <p id="selecciona">Selecciona el color de los ojos:</p>
+              <select name="dropdown" id="dropdown">
+                <option value="Elija">Elija....</option>
+                <option value="verdes">Verdes</option>
+                <option value="azules">Azules</option>
+                <option value="negros">Negros</option>
+                <option value="marrones">Marrones</option>
+              </select><br> 
+              
+              <p id="radio">Elija el Sexo:</p>
+               <label for="sexom" id="sexoma">
+                <input type="radio" id="sexom" name="sexo-label" value="sexom" checked>Masculino
+               </label><br>
+               <label for="sexof" id="sexofe">
+                <input type="radio" id="sexof" name="sexo-label" value="sexof">Femenino
+               </label>
+
+               <p id="lenguaje">Cuales son tus Lenguajes de Programacion Preferidos:</p>
+                <div id="div">
+               <label for="java">
+                <input type="checkbox" id="java" name="lenguaje-label" value="java" checked>Java</label><br>
+
+               <label for="html">
+                <input type="checkbox" id="html" name="lenguaje-label" value="html">Html</label><br>
+
+               <label for="javascript">
+                <input type="checkbox" id="javascript" name="lenguaje-label" value="javascript">Javascript</label><br>
+
+               <label for="css">
+                <input type="checkbox" id="css" name="lenguaje-label" value="css">Css</label><br>
+              </div>
+
+               <p id="comenta">Comentarios Adicionales</p>
+                   <p><textarea name="mensaje" id="comentarios" placeholder="Comparte tu opinion aca ......"></textarea></p> <br>
+                  
+
+                <label for="submit" id="submitbuton">ENVIAR</label><br>  
+                    <button type="submit" id="submit"  name="boton-label" checked>
+                     
+               
+            </form>
+  
+            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        </body>
+
+</html>
